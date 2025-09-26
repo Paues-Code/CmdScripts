@@ -20,7 +20,7 @@ goto End
 :UNLOCK
 echo Introduzca la contrasena para mostrar la CarpetaProtegida
 set/p "pass="
-if NOT %pass%== 1772 goto FAIL
+if NOT %pass%== 0000 goto FAIL
 attrib -h -s "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
 ren "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" CarpetaProtegida
 echo Folder Unlocked successfully
@@ -32,4 +32,5 @@ goto end
 md CarpetaProtegida
 echo CarpetaProtegida created successfully
 goto End
+
 :End
